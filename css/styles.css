@@ -668,17 +668,7 @@ ul {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.chekbox-label {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  margin: auto;
-  color: var(--primary-color);
-  cursor: pointer
-}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
