@@ -309,11 +309,18 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <p class="modal-head">Залиште свої дані, ми вам передзвонимо</p>
       <button type="button" class="modal-close" data-modal-close>
         <svg class="modal-close-icon" width="18" height="18">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <form class="modal-form">
+        <input type="text" class="modal-input" placeholder="name" name="name">
+        <input type="text" class="modal-input" placeholder="email" name="email">
+        <input type="text" class="modal-input" placeholder="phone" name="phone">
+        <button type="submit"></button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
