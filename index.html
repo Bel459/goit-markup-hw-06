@@ -93,13 +93,13 @@
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="items list">
           <li class="catalog-item"><img class="img" src="./images/work1.jpg" alt="work" width="370">
-          <p class="catalog-text">Десктопні додатки</p>
+            <p class="catalog-text">Десктопні додатки</p>
           </li>
           <li class="catalog-item"><img class="img" src="./images/work2.jpg" alt="work" width="370">
-          <p class="catalog-text">Мобільні додатки</p>
+            <p class="catalog-text">Мобільні додатки</p>
           </li>
           <li class="catalog-item"><img class="img" src="./images/work3.jpg" alt="work" width="370">
-          <p class="catalog-text">Дизайнерські рішення</p>
+            <p class="catalog-text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
@@ -274,7 +274,8 @@
           <a class="logo-footer" href="./index.html" lang="en">Web<span class="logo-white">Studio</span></a>
           <address>
             <ul class="contacts-footer list">
-              <li class="item address"><a href="https://goo.gl/maps/fWf7DQZ6pMGL4R4Q6" target="_blank" class="footer-contact">м. Київ, пр-т
+              <li class="item address"><a href="https://goo.gl/maps/fWf7DQZ6pMGL4R4Q6" target="_blank"
+                  class="footer-contact">м. Київ, пр-т
                   Лесі
                   Українки, 26</a></li>
               <li class="item"><a href="mailto:info@devstudio.com" lang="en"
@@ -304,6 +305,18 @@
                 </svg></a></li>
           </ul>
         </div>
+        <form class="subscribe" action="/" method="post" autocomplete="off">
+          <h3 class="subscribe-title">Підпишіться на розсилку</h3>
+          <div class="subscribe-group">
+            <input class="subscribe-input" type="email" name="name" placeholder="E-mail">
+            <button class="button button-subscribe" type="submit">
+              <span class="button-subscribe-name">Підписатися</span>
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </footer>
@@ -316,12 +329,44 @@
         </svg>
       </button>
       <form class="modal-form">
-        <input type="text" class="modal-input" placeholder="name" name="name">
-        <input type="text" class="modal-input" placeholder="email" name="email">
-        <input type="text" class="modal-input" placeholder="phone" name="phone">
-        <button type="submit"></button>
-      </form>
+        <div class="modal-form-field">
+          <label for="username" class="modal-label">Ім'я</label>
+          <input type="text" name="username" id="username" class="modal-input">
+          <svg class="modal-icons" width="18" height="18">
+            <use href="./images/icons.svg#icon-name"></use>
+          </svg>
+        </div>
+        <div class="modal-form-field">
+          <label for="tel" class="modal-lable">Телефон</label>
+          <input type="tel" id="tel" class="modal-input">
+          <svg class="modal-icons" width="18" height="18">
+            <use href="./images/icons.svg#phone-black"></use>
+          </svg>
+        </div>
+        <div class="modal-form-field">
+          <label for="mail" class="modal-label">Пошта</label>
+          <input type="email" id="mail" class="modal-input">
+          <svg class="modal-icons" width="18" height="18">
+            <use href="./images/icons.svg#email-black"></use>
+          </svg>
+        </div>
+        <div class="modal-form-filed">
+          <label for="comment" class="modal-label">Коментар</label>
+          <textarea class="modal-input
+          modal-textarea" name="comment" id="comment" placeholder="Введіть текст" rows="10"></textarea>
+        </div>
+        <div class="form-group-checkbox">
+          <label class="form-label-checkbox">
+            <input class="form-input-checkbox" type="checkbox" name="checkbox" value="1" />
+            <svg class="form-icon-checkbox" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю
+            <a class="agreement-link" href="#" target="_blank">Умови договору</a></label>
+        </div>
     </div>
+    </form>
+  </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>
